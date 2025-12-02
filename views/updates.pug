@@ -1,0 +1,24 @@
+doctype html
+html
+  head
+    title Update Contact (Pet) Form | Integrating With HubSpot I Practicum
+    link(rel="stylesheet", href="/css/style.css")
+  body
+    h1 Update Contact (Pet) Form | Integrating With HubSpot I Practicum
+    a(href="/") Return to homepage
+
+    form(action="/update-cobj" method="POST")
+      div
+        label(for="name_pet") Name Pet:
+        input(type="text" name="name_pet" required)
+      div
+        label(for="pet_age") Pet Age:
+        input(type="text" name="pet_age" required)
+      div
+        label(for="pet_gender") Pet Gender:
+        input(type="text" name="pet_gender" required)
+      div
+        label(for="pet_type") Pet Type:
+        input(type="text" name="pet_type" required)
+      div
+        button(type="submit") Submit

@@ -1,0 +1,23 @@
+doctype html
+html
+  head
+    title Homepage
+    link(rel="stylesheet", href="/css/style.css")
+  body
+    h1 Pets List
+    a(href="/update-cobj") Add to this table
+
+    table(border="1")
+      thead
+        tr
+          th Name Pet
+          th Pet Age
+          th Pet Gender
+          th Pet Type
+      tbody
+        each contact in contacts
+          tr
+            td= contact.properties.name_pet
+            td= contact.properties.pet_age
+            td= contact.properties.pet_gender
+            td= contact.properties.pet_type
